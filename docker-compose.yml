@@ -32,7 +32,8 @@
 #  scripts are ignored (e.g. when you mount a local directory or when docker-compose saves
 #  the volume and reuses it for the new container).
 #
-#  !!!!! MAKE SURE your folder './init' is executable (chmod +x ./init)
+#  !!!!! MAKE SURE your folder './init' is executable (chmod +x ./init) 
+#  !!!!! Don't Work in Windows File system with WSL2(chmod won't work on any files contained in the /mnt/[ntfs dive] partitions) - https://github.com/microsoft/WSL/issues/81
 #  !!!!! or 'initdb.sql' will be ignored!
 #  
 #  './data' will hold all data after first start!
